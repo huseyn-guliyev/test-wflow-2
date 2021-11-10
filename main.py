@@ -8,6 +8,7 @@ url = 'https://github.com/huseyn-guliyev/test-wflow-2/tree/main/data'
 response = requests.get(url)
 w_soup =  BeautifulSoup(response.text, 'html.parser')
 txt = w_soup.find_all('a', attrs={'class':'js-navigation-open Link--primary'})
+txt = list(map(lambda x: x.get('title'), txt))
 if len(txt) == 1:
     x = 0
 else:
