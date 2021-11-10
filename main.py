@@ -13,7 +13,7 @@ if len(txt) == 1:
 else:
     x = int(txt[1].get('title').split('-')[-1])
 lst = []
-for i in range(x, x+100): #len(df)
+for i in range(x, x+400): #len(df)
     try: 
         url = 'https://az.wikipedia.org/wiki/' + df['title'].iloc[i]
         response = requests.get(url)
