@@ -31,6 +31,6 @@ for i in range(x, x+500): #len(df)
     except:
         lst.append('ERROR')
 
-with open("./data/till_{}.pickle".format(x+100), "wb") as fp:
+with open("./data/till_{}.pickle".format(x+500), "wb") as fp:
     pickle.dump(lst, fp)
     fp.close()
