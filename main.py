@@ -11,7 +11,7 @@ txt = w_soup.find_all('a', attrs={'class':'js-navigation-open Link--primary'})
 if len(txt) == 1:
     x = 0
 else:
-    x = int(txt[0].get('title').split('-')[-1])
+    x = int(txt[1].get('title').split('-')[-1])
 lst = []
 for i in range(x, x+100): #len(df)
     try: 
