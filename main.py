@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 df = pd.read_csv('articles.csv')
-url = 'https://github.com/huseyn-guliyev/test-workflow/data'
+url = 'https://github.com/huseyn-guliyev/test-wflow-2/tree/main/data'
 response = requests.get(url)
 w_soup =  BeautifulSoup(response.text, 'html.parser')
 txt = w_soup.find_all('a', attrs={'class':'js-navigation-open Link--primary'})
