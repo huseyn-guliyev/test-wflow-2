@@ -11,9 +11,11 @@ txt = w_soup.find_all('a', attrs={'class':'js-navigation-open Link--primary'})
 if len(txt) == 1:
     x = 0
 else:
-    x = int(txt[1].get('title').split('_')[-1][:-7])
+    txt.remove('00.txt')
+    # x = int(txt[1].get('title').split('_')[-1][:-7])
+    x = max(list(map(lambda x: int(x.split('_')[-1][:-7]), txt)))
 lst = []
-for i in range(x, x+400): #len(df)
+for i in range(x, x+500): #len(df)
     try: 
         url = 'https://az.wikipedia.org/wiki/' + df['title'].iloc[i]
         response = requests.get(url)

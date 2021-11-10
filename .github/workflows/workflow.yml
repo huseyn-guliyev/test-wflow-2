@@ -3,7 +3,7 @@ name: scraper
 on:
   push:
   schedule:
-    - cron: '*/6 * * * *' # runs at every minute, check crontab.guru for more info
+    - cron: '*/5 * * * *' # runs at every minute, check crontab.guru for more info
 
 jobs:
   build:
