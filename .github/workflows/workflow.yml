@@ -1,6 +1,7 @@
 name: scraper
 
 on:
+  push:
   schedule:
     - cron: '* * * * *' # runs at every minute, check crontab.guru for more info
 
