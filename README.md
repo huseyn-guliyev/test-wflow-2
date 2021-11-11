@@ -1,5 +1,7 @@
 # wikipedia_cron_scraper_azerbaijani
 
+[![scraper](https://github.com/huseyn-guliyev/wikipedia_cron_scraper_azerbaijani/actions/workflows/workflow.yml/badge.svg)](https://github.com/huseyn-guliyev/wikipedia_cron_scraper_azerbaijani/actions/workflows/workflow.yml)
+
 Bu repository (qovluq) Azərbaycan dilində olan Wikipedia səhifələrinin məzmununu çəkmək məqsədi ilə yaradılıb. Məzmunun yığılmasında əsas məqsəd isə Azərbaycan dilində olan səhv yazılmış sözləri düzəldən alqoritm üçün sözlər / cümlələr yığmaqdır, həmçinin bu data gələcəkdə digər araşdırmaçılara və data mütəxəssislərinə Təbii Dilin Emalı (NLP) sahəsində kömək edə bilər.
 
 Bənzəri bir repository yaratmaq istəsəniz [bura] baxa bilərsiniz.
